@@ -27,9 +27,8 @@ class Communication(serial.Serial):
                 self.log_message(f"Dummy send: {data}")
 
     def get_data(self):
-        """단일 데이터를 수신 (더미 모드에서는 무작위 데이터 생성)"""
         if not self.dummyPlug:
-            value = self.readline()  # 부모 클래스의 readline() 메서드 사용
+            value = self.readline()
             decoded_bytes = value.decode("utf-8").strip()
             return decoded_bytes
         else:
