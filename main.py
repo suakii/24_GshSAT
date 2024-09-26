@@ -4,8 +4,8 @@ from PySide2 import QtWidgets, QtCore, QtGui
 from PySide2.QtCore import QTimer
 from PySide2.QtUiTools import QUiLoader
 import serial.tools.list_ports
-from communications import Communication  # 통신 클래스 임포트
-from bluetoothsearchthread import BluetoothSearchThread  # BluetoothSearchThread 클래스 임포트
+from communications import Communication
+from bluetoothsearchthread import BluetoothSearchThread
 
 
 class MainWindow(QtWidgets.QMainWindow):
